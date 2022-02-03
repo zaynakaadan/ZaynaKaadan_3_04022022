@@ -16,7 +16,7 @@
     "url": "https://github.com/zaynakaadan/ohmyfood/issues"
   },
   "homepage": "https://github.com/zaynakaadan/ohmyfood#readme",
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.49.7"
   }
 }
