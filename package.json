@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Mon projet 3 OhMyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaynakaadan/ohmyfood.git"
+  },
+  "author": "zaynakaadan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaynakaadan/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/zaynakaadan/ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}
