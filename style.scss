@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+*{
+box-sizing: border-box;
+
+}
+ 
+ header{
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    box-shadow:0 0 0.5rem rgb(0 0 0 / 25%);
+  padding:0.2rem ;
+  position: relative;
+ 
+ }
+ body{
+     margin: 0;
+     font-family: 'Roboto', sans-serif;
+
+ }
+ .location {
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     background-color:#D8D8D8;
+     gap: 1rem;
+     
+ }
+     
+main .location h2{
+font-size: 1rem;
+font-weight: 400;
+
+
+}
+.réserver{
+    background-color:#f3f3f3 ;
+    text-align: center;
+    
+    
+}
+.réserver h2{
+    padding:  0; 
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.réserver p{
+font-size: small;
+margin-bottom: 2rem;
+}
+.réserver button{
+background-image: linear-gradient(#ff79DA,#9356dc);
+color: white;
+padding: 1rem 2rem;
+border: none;
+border-radius:2rem ;
+box-shadow: 2px 1px 8px -2px #000000;
+transition: all 200ms;
+margin-bottom: 2rem;
+}
+.réserver button:hover{
+transform: scale(1.02);
+opacity: 0.9;
+cursor: pointer;
+}
+div{
+    background-color: #9356dc;
+}
