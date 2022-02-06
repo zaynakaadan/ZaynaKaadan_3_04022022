@@ -2,26 +2,49 @@
 @use "../utils/zoom";
 .fonction{
     padding: 0 2rem;
+    counter-reset: numbers;
+
    & ol{
         display: flex;
-        flex-wrap: wrap;
-        gap:1rem;
-        @media (max-width:800px){
+        gap:2rem;
+        @media (max-width:830px){
           flex-direction: column;
-          
-
-        }
+         }
     }
    & li{ 
+       position: relative;
+       & ::after{     
+        content:counter(numbers);
+          counter-increment: numbers; 
+          color: white;
+          background-color: #9356dc;
+          padding: 0.5rem;
+          width: 0.5rem;
+          height: 0.5rem;
+          display: flex;
+         align-items: center;
+         justify-content: center;
+         border-radius:50%;
+         position: absolute;
+        bottom:0.5rem;
+        left:-1rem;
+        }
+        list-style-type:none;
+
      background-color: #f6f6f6; 
-     padding: 1rem 2rem;  
-     border:1px solid red;
+       
      flex-grow: 1;
+     
      border-radius: 1rem;
      @include box-shadow.base-shadow;
      &:hover{
-        @include zoom.transform-zoom;
-
+     @include zoom.transform-zoom;
      }
+    
+&  i.fas{
+    color: #7e7e7e ;
+    padding: 1rem;
+    
+}
     }
    }
