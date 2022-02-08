@@ -7,7 +7,7 @@
    & ol{
         display: flex;
         gap:2rem;
-        @media (max-width:830px){
+        @media (max-width:1055px){
           flex-direction: column;
          }
     }
@@ -20,14 +20,15 @@
           background-color: #9356dc;
           padding: 0.5rem;
           width: 0.5rem;
-          height: 0.5rem;
-          display: flex;
+         height: 0.5rem;
+         display: flex;
          align-items: center;
          justify-content: center;
          border-radius:50%;
          position: absolute;
-        bottom:0.5rem;
+        top:50%;
         left:-1rem;
+        transform: translateY(-50%);
         }
         list-style-type:none;
 

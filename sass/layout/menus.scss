@@ -1,0 +1,98 @@
+@use  "../utils/box-shadow.scss";
+
+.menus{
+
+   background-color: #f6f6f6; 
+   padding: 4rem 2rem;
+   
+.menus_cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    
+    @media( max-width:1096px){
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+.new{
+
+    
+    position: relative;
+    
+    border-radius: 1rem ;
+   }
+.new::before{
+    content: "Nouveau";
+    position: absolute;
+    height: 2rem;
+    width: 5rem;
+    
+    background-color: #99e2d0;
+    color:darken($color: #99e2d0, $amount:50%) ;
+    display: grid;
+    place-items: center;
+    right: 1rem;
+    top: 1rem;
+    border-radius: 0.2rem;
+    
+    
+}
+
+}
+
+.card{
+    background-color: white;
+    border-radius: 1rem ;
+    @include  box-shadow.base-shadow;
+
+&__image{
+    height:15rem ;
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+  
+} 
+  
+@for $i from 1 through 4 {
+    &__image-#{$i} {
+        background-image:url("../ohmyfood/assets/menu-#{$i}.jpg");
+    }
+}
+}
+& .card__description{
+    position: relative;  
+    h3,
+    p{   
+      margin:0.5rem; 
+          } 
+          h3{
+             padding-top: 0.5rem; 
+          } 
+          p{
+              padding-bottom: 0.3rem;
+          }   
+            i  {
+                font-size: 2rem;
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+              }    
+              .fas{
+                color: transparent;
+                background-image: linear-gradient(#9356DC,#FF79DA);
+                -webkit-background-clip:text;
+            opacity: 0;
+            transition: all 200ms ease-in-out;
+              }
+     
+&:hover .fas {
+   opacity: 1;
+   transform:  translateY(-50%) scale(1.1);
+    
+}
+
+
+}
+}
+
+

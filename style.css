@@ -10,6 +10,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -67,7 +72,7 @@ header {
   display: flex;
   gap: 2rem;
 }
-@media (max-width: 830px) {
+@media (max-width: 1055px) {
   .fonction ol {
     flex-direction: column;
   }
@@ -93,16 +98,121 @@ header {
   justify-content: center;
   border-radius: 50%;
   position: absolute;
-  bottom: 0.5rem;
+  top: 50%;
   left: -1rem;
+  transform: translateY(-50%);
 }
 .fonction li:hover {
   transform: scale(1.02);
   cursor: pointer;
+  background-color: #D8BFD8;
 }
 .fonction li i.fas {
   color: #7e7e7e;
   padding: 1rem;
+}
+
+.menus {
+  background-color: #f6f6f6;
+  padding: 4rem 2rem;
+}
+.menus .menus_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 1096px) {
+  .menus .menus_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.menus .menus_cards .new {
+  position: relative;
+  border-radius: 1rem;
+}
+.menus .menus_cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99e2d0;
+  color: #1b6150;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 0.2rem;
+}
+.menus .card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 8px -2px #000000;
+}
+.menus .card__image {
+  height: 15rem;
+  background-size: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.menus .card__image-1 {
+  background-image: url("../ohmyfood/assets/menu-1.jpg");
+}
+.menus .card__image-2 {
+  background-image: url("../ohmyfood/assets/menu-2.jpg");
+}
+.menus .card__image-3 {
+  background-image: url("../ohmyfood/assets/menu-3.jpg");
+}
+.menus .card__image-4 {
+  background-image: url("../ohmyfood/assets/menu-4.jpg");
+}
+.menus .card__description {
+  position: relative;
+}
+.menus .card__description h3,
+.menus .card__description p {
+  margin: 0.5rem;
+}
+.menus .card__description h3 {
+  padding-top: 0.5rem;
+}
+.menus .card__description p {
+  padding-bottom: 0.3rem;
+}
+.menus .card__description i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menus .card__description .fas {
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.menus .card__description:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+footer {
+  background-color: #353535;
+  padding: 0.5rem 2rem;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-weight: 100;
+  font-size: medium;
+}
+footer p {
+  color: white;
+  padding-bottom: 1rem 0;
+}
+footer i {
+  padding-right: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
