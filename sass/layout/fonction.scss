@@ -1,5 +1,5 @@
-@use "../utils/box-shadow";
-@use "../utils/zoom";
+@use "../utils/mixins";
+
 .fonction{
     padding: 0 2rem;
     counter-reset: numbers;
@@ -37,9 +37,9 @@
      flex-grow: 1;
      
      border-radius: 1rem;
-     @include box-shadow.base-shadow;
+     @include mixins.base-shadow;
      &:hover{
-     @include zoom.transform-zoom;
+     @include mixins.transform-zoom;
      }
     
 &  i.fas{

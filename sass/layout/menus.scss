@@ -1,4 +1,4 @@
-@use  "../utils/box-shadow.scss";
+@use  "../utils/mixins";
 
 .menus{
 
@@ -43,15 +43,13 @@
 .card{
     background-color: white;
     border-radius: 1rem ;
-    @include  box-shadow.base-shadow;
+    @include  mixins.base-shadow;
 
 &__image{
     height:15rem ;
     background-size: cover;
     border-radius: 1rem 1rem 0 0;
-  
-} 
-  
+    } 
 @for $i from 1 through 4 {
     &__image-#{$i} {
         background-image:url("../ohmyfood/assets/menu-#{$i}.jpg");
@@ -59,7 +57,19 @@
 }
 }
 & .card__description{
-    position: relative;  
+    position: relative;
+    &::before{
+        @include mixins.heart;
+    }
+    
+    &::after{
+        @include mixins.heart($opacity:0,$font-weight: 900, $color:transparent);
+        @include mixins.gradient(1);
+        
+    }
+    &:hover::after{
+    opacity: 1;
+    }
     h3,
     p{   
       margin:0.5rem; 
@@ -70,20 +80,8 @@
           p{
               padding-bottom: 0.3rem;
           }   
-            i  {
-                font-size: 2rem;
-                position: absolute;
-                right: 1rem;
-                top: 50%;
-                transform: translateY(-50%);
-              }    
-              .fas{
-                color: transparent;
-                background-image: linear-gradient(#9356DC,#FF79DA);
-                -webkit-background-clip:text;
-            opacity: 0;
-            transition: all 200ms ease-in-out;
-              }
+              
+              
      
 &:hover .fas {
    opacity: 1;

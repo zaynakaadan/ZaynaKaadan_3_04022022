@@ -1,5 +1,6 @@
 
-@use  "../utils/box-shadow.scss";
+@use  "../utils/mixins";
+
 
 .réserver{
 background-color:#f3f3f3 ;
@@ -16,7 +17,7 @@ font-size: small;
 margin-bottom: 2rem;
 }
 & button{
-background-image: linear-gradient(#ff79DA,#9356dc);
+
 color: white;
 padding: 1rem 2rem;
 border: none;
@@ -24,7 +25,8 @@ border-radius:2rem ;
 
 transition: all 200ms;
 margin-bottom: 2rem;
-@include  box-shadow.base-shadow;
+@include  mixins.base-shadow;
+@include mixins.gradient(0.9);
 }
 & button:hover{
 transform: scale(1.02);
