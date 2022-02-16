@@ -1,7 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -19,8 +21,12 @@ header {
   font-family: "Shrikhand", cursive;
   text-align: center;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  padding: 0.2rem;
+  padding: 0.1rem;
   position: relative;
+}
+
+h1 {
+  margin-bottom: 0;
 }
 
 .location {
@@ -55,7 +61,7 @@ header {
   border-radius: 2rem;
   transition: all 200ms;
   margin-bottom: 2rem;
-  box-shadow: 2px 1px 8px -2px #000000;
+  box-shadow: 2px 1px 8px -2px #7e7e7e;
   background-image: linear-gradient(rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
 }
 .réserver button:hover {
@@ -71,6 +77,8 @@ header {
 .fonction ol {
   display: flex;
   gap: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
 }
 @media (max-width: 1055px) {
   .fonction ol {
@@ -83,14 +91,14 @@ header {
   background-color: #f6f6f6;
   flex-grow: 1;
   border-radius: 1rem;
-  box-shadow: 2px 1px 8px -2px #000000;
+  box-shadow: 2px 1px 8px -2px #7e7e7e;
 }
 .fonction li ::after {
   content: counter(numbers);
   counter-increment: numbers;
   color: white;
   background-color: #9356dc;
-  padding: 0.5rem;
+  padding: 0.8rem;
   width: 0.5rem;
   height: 0.5rem;
   display: flex;
@@ -146,7 +154,7 @@ header {
 .menus .card {
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 2px 1px 8px -2px #000000;
+  box-shadow: 2px 1px 8px -2px #7e7e7e;
 }
 .menus .card__image {
   height: 15rem;
@@ -243,8 +251,222 @@ footer i {
   padding-right: 0.8rem;
 }
 
-img {
+@keyframes appear {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.image img {
+  display: block;
   width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.resto__title {
+  background-color: #f6f6f6;
+  border-radius: 2rem 2rem 0 0;
+  margin-top: -3rem;
+  margin-bottom: -2rem;
+  position: relative;
+}
+.resto__title h2 {
+  font-family: "shrikhand", "cursive";
+  padding: 1rem 1rem;
+}
+.resto__title::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "font awesome 5 free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: inherit;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+.resto__title::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "font awesome 5 free";
+  font-weight: 900;
+  content: "\f004";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: transparent;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(#ff79da, #9356dc);
+}
+.resto__title:hover::after {
+  opacity: 1;
+}
+
+#page-resto header::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f060";
+  position: absolute;
+  left: 1rem;
+  top: 2.5rem;
+}
+#page-resto .menus-grid {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+@media (max-width: 1000px) {
+  #page-resto .menus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+#page-resto .menus-grid h3 {
+  font-weight: 400;
+  position: relative;
+}
+#page-resto .menus-grid h3::after {
+  content: "";
+  height: 0.25rem;
+  width: 3rem;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0rem;
+  top: 1.6rem;
+}
+#page-resto .resto-main {
+  padding: 0 1rem;
+  background-color: #f6f6f6;
+}
+#page-resto .resto-main .menus__category {
+  overflow: hidden;
+}
+#page-resto .resto-main .menus__category h4 {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+#page-resto .resto-main .menus__category p {
+  margin: 0;
+}
+#page-resto .resto-main .menus__category .menu-item {
+  display: flex;
+  background-color: white;
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  white-space: nowrap;
+  box-shadow: 2px 1px 8px -2px #7e7e7e;
+  animation: appear 1s;
+  animation-fill-mode: both;
+}
+#page-resto .resto-main .menus__category .menu-item:nth-child(2) {
+  animation-delay: 200ms;
+}
+#page-resto .resto-main .menus__category .menu-item:nth-child(3) {
+  animation-delay: 300ms;
+}
+#page-resto .resto-main .menus__category .menu-item:nth-child(4) {
+  animation-delay: 400ms;
+}
+#page-resto .resto-main .menus__category .menu-item:hover {
+  cursor: pointer;
+}
+#page-resto .resto-main .menus__category .menu-item .menu-item__description {
+  padding: 1rem;
+  overflow: hidden;
+}
+#page-resto .resto-main .menus__category .menu-item .menu-item__description h4,
+#page-resto .resto-main .menus__category .menu-item .menu-item__description p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#page-resto .resto-main .menus__category .menu-item .price {
+  padding: 1rem;
+  margin-left: auto;
+  font-weight: 900;
+  display: flex;
+  align-items: flex-end;
+}
+#page-resto .resto-main .menus__category .menu-item .menu-item__check {
+  border-radius: 0 1rem 1rem 0;
+  background-color: #99e2d0;
+  margin-right: -4rem;
+  width: 4rem;
+  transition: margin-right 0.5s;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+#page-resto .resto-main .menus__category .menu-item .menu-item__check i {
+  display: grid;
+  place-items: center;
+  color: #99e2d0;
+  aspect-ratio: 1;
+  width: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+#page-resto .resto-main .menus__category .menu-item:hover .menu-item__check {
+  margin-right: 0;
+  cursor: pointer;
+}
+#page-resto .resto-main .menus__category .menu-item:hover i {
+  animation: quarterspin 0.5s ease-in-out;
+}
+@keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+section.order {
+  height: 20vh;
+  display: grid;
+  place-items: center;
+}
+section.order button {
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  transition: all 200ms;
+  margin-bottom: 2rem;
+  box-shadow: 2px 1px 8px -2px #7e7e7e;
+  background-image: linear-gradient(rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
+}
+section.order button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

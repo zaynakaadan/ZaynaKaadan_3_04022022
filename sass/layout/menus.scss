@@ -43,7 +43,7 @@
 .card{
     background-color: white;
     border-radius: 1rem ;
-    @include  mixins.base-shadow;
+    @include  mixins.box-shadow;
 
 &__image{
     height:15rem ;
@@ -57,35 +57,20 @@
 }
 }
 & .card__description{
-    position: relative;
-    &::before{
-        @include mixins.heart;
-    }
-    
-    &::after{
-        @include mixins.heart($opacity:0,$font-weight: 900, $color:transparent);
-        @include mixins.gradient(1);
-        
-    }
-    &:hover::after{
-    opacity: 1;
-    }
+    @include mixins.heart-animated;
     h3,
     p{   
-      margin:0.5rem; 
-          } 
-          h3{
-             padding-top: 0.5rem; 
-          } 
-          p{
-              padding-bottom: 0.3rem;
-          }   
-              
-              
-     
-&:hover .fas {
-   opacity: 1;
-   transform:  translateY(-50%) scale(1.1);
+    margin:0.5rem; 
+        } 
+        h3{
+            padding-top: 0.5rem; 
+        } 
+        p{
+            padding-bottom: 0.3rem;
+        }   
+  &:hover .fas {
+  opacity: 1;
+  transform:  translateY(-50%) scale(1.1);
     
 }
 
