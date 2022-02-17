@@ -51,8 +51,9 @@ h1 {
   padding-top: 2rem;
 }
 .réserver p {
-  font-size: small;
+  font-size: 1rem;
   margin-bottom: 2rem;
+  color: grey;
 }
 .réserver button {
   color: white;
@@ -71,7 +72,7 @@ h1 {
 }
 
 .fonction {
-  padding: 0 2rem;
+  padding: 2rem 2rem;
   counter-reset: numbers;
 }
 .fonction ol {
@@ -114,6 +115,9 @@ h1 {
   transform: scale(1.02);
   cursor: pointer;
   background-color: #D8BFD8;
+}
+.fonction li:hover i::before {
+  color: #9356DC;
 }
 .fonction li i.fas {
   color: #7e7e7e;
@@ -245,7 +249,6 @@ footer h2 {
 }
 footer p {
   color: white;
-  padding-bottom: 1rem 0;
 }
 footer i {
   padding-right: 0.8rem;
@@ -427,8 +430,8 @@ footer i {
   display: grid;
   place-items: center;
   color: #99e2d0;
-  aspect-ratio: 1;
   width: 2rem;
+  height: 2rem;
   background-color: white;
   border-radius: 1rem;
 }

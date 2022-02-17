@@ -1,7 +1,7 @@
 @use "../utils/mixins";
 
 .fonction{
-    padding: 0 2rem;
+    padding: 2rem 2rem;
     counter-reset: numbers;
 
    & ol{
@@ -17,17 +17,17 @@
        position: relative;
        & ::after{     
         content:counter(numbers);
-          counter-increment: numbers; 
-          color: white;
-          background-color: #9356dc;
-          padding: 0.8rem;
-          width: 0.5rem;
-         height: 0.5rem;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         border-radius:50%;
-         position: absolute;
+        counter-increment: numbers; 
+        color: white;
+        background-color: #9356dc;
+        padding: 0.8rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:50%;
+        position: absolute;
         top:50%;
         left:-1rem;
         transform: translateY(-50%);
@@ -43,6 +43,9 @@
      &:hover{
      @include mixins.transform-zoom;
      background-color:#D8BFD8;
+     i::before {
+        color:#9356DC; 
+     }
      }
     
 &  i.fas{
