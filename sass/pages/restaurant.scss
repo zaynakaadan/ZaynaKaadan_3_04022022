@@ -1,6 +1,7 @@
 @use "../utils/mixins";
 @use "../utils/variables";
 @use "../utils/animations";
+@use "../utils/colors";
 .image img {
   display: block;
   width:100% ;
@@ -8,7 +9,8 @@
   object-fit: cover;
   }
 .resto__title{
-  background-color: #f6f6f6;
+  
+  background-color:colors.$lightergrey;
   border-radius:2rem 2rem 0 0 ;
   margin-top: -3rem;
   margin-bottom: -2rem;
@@ -43,7 +45,7 @@ header::before{
       content: "";
       height:0.25rem;
       width: 3rem;
-      background-color: #99e2d0;
+      background-color: colors.$tertiary;
       position:absolute;
       left: 0rem;
       top: 1.6rem;
@@ -53,7 +55,7 @@ header::before{
 }
 .resto-main{
   padding:0 1rem;
-  background-color: #f6f6f6;
+  background-color: colors.$lightergrey;
 
 
 .menus__category{
@@ -114,7 +116,7 @@ overflow: hidden;
   .menu-item__check{
     $button-width:4rem;
     border-radius:0 1rem 1rem 0 ;
-    background-color:#99e2d0 ;
+    background-color:colors.$tertiary;
     margin-right: -$button-width;
     width:$button-width;
     transition: margin-right 0.5s;
@@ -125,7 +127,7 @@ overflow: hidden;
     i {
       display: grid;
       place-items: center;
-      color: #99e2d0;
+      color: colors.$tertiary;
       width: 2rem;
       height: 2rem;
       background-color: white;

@@ -1,8 +1,10 @@
+@use  "../utils/variables.scss";
+@use  "../utils/colors.scss";
 .location {
      display:flex;
      align-items: center;
      justify-content: center;
-     background-color:#D8D8D8;
+     background-color:colors.$lightgrey;
      gap: 1rem;
      & h2{
         font-size: 1rem;

@@ -1,5 +1,6 @@
+@use  "../utils/colors";
 footer{
-    background-color:  #353535;
+    background-color:colors.$darkgrey;
     padding: 0.5rem 2rem;
     h2{
         font-family: "Shrikhand", cursive;

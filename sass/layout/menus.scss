@@ -1,8 +1,8 @@
 @use  "../utils/mixins";
-
+@use  "../utils/colors";
 .menus{
 
-   background-color: #f6f6f6; 
+   background-color: colors.$lightergrey; 
    padding: 4rem 2rem;
    
 .menus_cards{
@@ -27,8 +27,8 @@
     height: 2rem;
     width: 5rem;
     
-    background-color: #99e2d0;
-    color:darken($color: #99e2d0, $amount:50%) ;
+    background-color:colors.$tertiary;
+    color:darken($color: colors.$tertiary, $amount:50%) ;
     display: grid;
     place-items: center;
     right: 1rem;
