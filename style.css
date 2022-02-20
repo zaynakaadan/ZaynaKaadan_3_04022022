@@ -71,8 +71,10 @@ h1 {
   cursor: pointer;
 }
 
-.loader {
+.loading {
   position: fixed;
+  display: grid;
+  place-items: center;
   background-color: #ffff;
   height: 100vh;
   top: 0;
@@ -81,16 +83,26 @@ h1 {
   left: 0;
   z-index: 1;
   opacity: 0.9;
-  animation: disappear 1s;
-  animation-fill-mode: forwards;
+  animation: disappear 200ms 3s forwards;
+  transform-origin: top;
+}
+.loading::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  border-top: 5px solid #9356DC;
+  border-radius: 50%;
+  animation: spin 1s infinite ease-in-out;
 }
 
 @keyframes disappear {
-  0% {
-    transform: scale(1);
-  }
-  100% {
+  to {
     transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 .fonction {
@@ -136,7 +148,7 @@ h1 {
 .fonction li:hover {
   transform: scale(1.02);
   cursor: pointer;
-  background-color: #D8D8D8;
+  background-color: #f5edff;
 }
 .fonction li:hover i::before {
   color: #9356DC;
@@ -473,12 +485,12 @@ footer i {
   }
 }
 
-section.order {
+.order {
   height: 20vh;
   display: grid;
   place-items: center;
 }
-section.order button {
+.order button {
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -488,7 +500,7 @@ section.order button {
   box-shadow: 2px 1px 8px -2px #7e7e7e;
   background-image: linear-gradient(rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
 }
-section.order button:hover {
+.order button:hover {
   transform: scale(1.02);
   opacity: 0.9;
   cursor: pointer;

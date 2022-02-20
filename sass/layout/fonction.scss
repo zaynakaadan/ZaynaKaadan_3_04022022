@@ -43,7 +43,7 @@
      @include mixins.box-shadow;
      &:hover{
      @include mixins.transform-zoom;
-     background-color:colors.$lightgrey;
+     background-color:colors.$lightpurple;
      i::before {
         color:colors.$primary; 
      }
