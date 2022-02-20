@@ -1,5 +1,5 @@
-@use  "../utils/mixins";
-@use  "../utils/colors";
+@use  "../utils/mixins.scss";
+@use  "../utils/colors.scss";
 .menus{
 
    background-color: colors.$lightergrey; 

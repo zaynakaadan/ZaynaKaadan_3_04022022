@@ -1,7 +1,7 @@
-@use "../utils/mixins";
-@use "../utils/variables";
-@use "../utils/animations";
-@use "../utils/colors";
+@use "../utils/mixins.scss";
+@use "../utils/variables.scss";
+@use "../utils/animations.scss";
+@use "../utils/colors.scss";
 .image img {
   display: block;
   width:100% ;

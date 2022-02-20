@@ -34,6 +34,7 @@ h1 {
   justify-content: center;
   background-color: #D8D8D8;
   gap: 1rem;
+  padding: 1rem;
 }
 .location h2 {
   font-size: 1rem;
