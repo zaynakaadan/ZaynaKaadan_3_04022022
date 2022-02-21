@@ -115,7 +115,7 @@ h1 {
   padding-left: 1rem;
   padding-bottom: 2rem;
 }
-@media (max-width: 1055px) {
+@media (max-width: 1000px) {
   .fonction ol {
     flex-direction: column;
   }
@@ -167,7 +167,7 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
-@media (max-width: 1096px) {
+@media (max-width: 1000px) {
   .menus .menus_cards {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -198,6 +198,7 @@ h1 {
   height: 15rem;
   background-size: cover;
   border-radius: 1rem 1rem 0 0;
+  background-position: center;
 }
 .menus .card__image-1 {
   background-image: url("../ohmyfood/assets/menu-1.jpg");
@@ -384,7 +385,7 @@ footer i {
   }
 }
 #page-resto .menus-grid h3 {
-  font-weight: 400;
+  font-weight: 300;
   position: relative;
 }
 #page-resto .menus-grid h3::after {
@@ -434,7 +435,7 @@ footer i {
   cursor: pointer;
 }
 #page-resto .resto-main .menus__category .menu-item .menu-item__description {
-  padding: 1rem;
+  padding: 0.5rem;
   overflow: hidden;
 }
 #page-resto .resto-main .menus__category .menu-item .menu-item__description h4,
@@ -446,7 +447,7 @@ footer i {
 #page-resto .resto-main .menus__category .menu-item .price {
   padding: 1rem;
   margin-left: auto;
-  font-weight: 900;
+  font-weight: 700;
   display: flex;
   align-items: flex-end;
 }

@@ -34,17 +34,15 @@ color: grey;
     z-index:1 ;
     opacity: 0.9;
     animation: disappear 200ms 3s forwards ;
-   transform-origin: top;
-   &::after{
-       content: "";
-       height: 100px;
-       width: 100px;
-       border-top: 5px solid colors.$primary;
-       border-radius: 50%;
-     animation: spin 1s infinite ease-in-out;  
-   }
-    
-
+    transform-origin: top;
+    &::after{
+    content: "";
+        height: 100px;
+        width: 100px;
+        border-top: 5px solid colors.$primary;
+        border-radius: 50%;
+        animation: spin 1s infinite ease-in-out;  
+    }
 }
 @keyframes disappear{
     to {

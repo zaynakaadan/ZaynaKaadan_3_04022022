@@ -1,32 +1,25 @@
 @use  "../utils/mixins.scss";
 @use  "../utils/colors.scss";
+@use  "../utils/variables.scss";
 .menus{
-
-   background-color: colors.$lightergrey; 
-   padding: 4rem 2rem;
-   
+background-color: colors.$lightergrey; 
+padding: 4rem 2rem;
 .menus_cards{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
-    
-    @media( max-width:1096px){
+    @media( max-width:variables.$breakpoint){
         grid-template-columns: repeat(1,1fr);
-        
-    }
+        }
 .new{
-
-    
     position: relative;
-    
     border-radius: 1rem ;
-   }
+}
 .new::before{
     content: "Nouveau";
     position: absolute;
     height: 2rem;
     width: 5rem;
-    
     background-color:colors.$tertiary;
     color:darken($color: colors.$tertiary, $amount:50%) ;
     display: grid;
@@ -34,12 +27,8 @@
     right: 1rem;
     top: 1rem;
     border-radius: 0.2rem;
-    
-    
 }
-
 }
-
 .card{
     background-color: white;
     border-radius: 1rem ;
@@ -49,6 +38,7 @@
     height:15rem ;
     background-size: cover;
     border-radius: 1rem 1rem 0 0;
+    background-position: center;
     } 
 @for $i from 1 through 4 {
     &__image-#{$i} {
@@ -68,13 +58,10 @@
         p{
             padding-bottom: 0.3rem;
         }   
-  &:hover .fas {
-  opacity: 1;
-  transform:  translateY(-50%) scale(1.1);
-    
+&:hover .fas {
+opacity: 1;
+transform:  translateY(-50%) scale(1.1);
 }
-
-
 }
 }
 

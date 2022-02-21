@@ -1,22 +1,22 @@
 @use "../utils/colors.scss";
 @use "../utils/mixins.scss";
-
+@use "../utils/variables.scss";
 .fonction{
     padding: 2rem 2rem;
     counter-reset: numbers;
 
-   & ol{
+& ol{
         display: flex;
         gap:2rem;
         padding-left:1rem ;
         padding-bottom: 2rem;
-        @media (max-width:1055px){
-          flex-direction: column;
-         }
+        @media (max-width:variables.$breakpoint){
+        flex-direction: column;
+        }
     }
-   & li{ 
-       position: relative;
-       & ::after{     
+& li{ 
+    position: relative;
+    & ::after{     
         content:counter(numbers);
         counter-increment: numbers; 
         color: white;
@@ -34,20 +34,17 @@
         transform: translateY(-50%);
         }
         list-style-type:none;
-        
-     background-color:colors.$lightergrey; 
-       
-     flex-grow: 1;
-     
-     border-radius: 1rem;
-     @include mixins.box-shadow;
-     &:hover{
-     @include mixins.transform-zoom;
-     background-color:colors.$lightpurple;
-     i::before {
+        background-color:colors.$lightergrey; 
+        flex-grow: 1;
+        border-radius: 1rem;
+        @include mixins.box-shadow;
+        &:hover{
+        @include mixins.transform-zoom;
+        background-color:colors.$lightpurple;
+    i::before {
         color:colors.$primary; 
-     }
-     }
+    }
+    }
     
 &  i.fas{
     color: colors.$grey;
@@ -55,4 +52,4 @@
     
 }
     }
-   }
+}

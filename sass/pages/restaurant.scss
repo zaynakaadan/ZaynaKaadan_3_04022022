@@ -9,7 +9,6 @@
   object-fit: cover;
   }
 .resto__title{
-  
   background-color:colors.$lightergrey;
   border-radius:2rem 2rem 0 0 ;
   margin-top: -3rem;
@@ -38,8 +37,7 @@ header::before{
   }
 
   h3{
-    
-    font-weight: 400;
+    font-weight: 300;
     position: relative;
     &::after{
       content: "";
@@ -57,21 +55,16 @@ header::before{
   padding:0 1rem;
   background-color: colors.$lightergrey;
 
-
 .menus__category{
   overflow: hidden;
   
-
   & h4{
     margin-bottom: 0;
     margin-top: 0.5rem;
   }
   & p{
     margin: 0;
-    
   }
-
-
 
 .menu-item{
   @for $i from 2 through 4 {
@@ -93,10 +86,8 @@ header::before{
   }
   
 .menu-item__description{
-padding: 1rem;
+padding: 0.5rem;
 overflow: hidden;
-
-
   & h4,
   p{
   overflow: hidden;
@@ -104,16 +95,14 @@ overflow: hidden;
   text-overflow: ellipsis;
 }
   }
-  
-  .price{
+    .price{
     padding: 1rem;
     margin-left: auto;
-    font-weight: 900;
+    font-weight: 700;
     display: flex;
     align-items: flex-end;
   }
-  
-  .menu-item__check{
+    .menu-item__check{
     $button-width:4rem;
     border-radius:0 1rem 1rem 0 ;
     background-color:colors.$tertiary;
@@ -133,8 +122,7 @@ overflow: hidden;
       background-color: white;
       border-radius: 1rem;
       }
-  
-}
+  }
 &:hover{
     .menu-item__check{
   margin-right: 0;

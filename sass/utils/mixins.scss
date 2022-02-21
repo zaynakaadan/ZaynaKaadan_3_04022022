@@ -5,9 +5,8 @@
     box-shadow: 2px 1px 8px -2px #7e7e7e;
 }
 @mixin transform-zoom {
-  transform: scale(1.02);
-  cursor: pointer;
-  
+transform: scale(1.02);
+cursor: pointer;
 }
 @mixin font-awesome{
     display: inline-block;
@@ -55,7 +54,7 @@ position: relative;
     }
 }
 @mixin base-button {
- color: white;
+color: white;
 padding: 1rem 2rem;
 border: none;
 border-radius:2rem ;
