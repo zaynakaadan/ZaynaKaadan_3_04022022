@@ -201,16 +201,16 @@ h1 {
   background-position: center;
 }
 .menus .card__image-1 {
-  background-image: url("../ZaynaKaadan_3_04022022/assets/menu-1.jpg");
+  background-image: url("../assets/menu-1.jpg");
 }
 .menus .card__image-2 {
-  background-image: url("../ZaynaKaadan_3_04022022/assets/menu-2.jpg");
+  background-image: url("../assets/menu-2.jpg");
 }
 .menus .card__image-3 {
-  background-image: url("../ZaynaKaadan_3_04022022/assets/menu-3.jpg");
+  background-image: url("../assets/menu-3.jpg");
 }
 .menus .card__image-4 {
-  background-image: url("../ZaynaKaadan_3_04022022/assets/menu-4.jpg");
+  background-image: url("../assets/menu-4.jpg");
 }
 .menus .card__description {
   position: relative;
