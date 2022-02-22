@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zaynakaadan/ohmyfood.git"
+    "url": "git+https://github.com/zaynakaadan/ZaynaKaadan_3_04022022.git"
   },
   "author": "zaynakaadan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zaynakaadan/ohmyfood/issues"
+    "url": "https://github.com/zaynakaadan/ZaynaKaadan_3_04022022/issues"
   },
-  "homepage": "https://github.com/zaynakaadan/ohmyfood#readme",
+  "homepage": "https://github.com/zaynakaadan/ZaynaKaadan_3_04022022#readme",
   "devDependencies": {
     "sass": "^1.49.7"
   }
