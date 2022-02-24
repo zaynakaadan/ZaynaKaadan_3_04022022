@@ -162,6 +162,9 @@ h1 {
   background-color: #f6f6f6;
   padding: 4rem 2rem;
 }
+.menus h2 {
+  padding-bottom: 1rem;
+}
 .menus .menus_cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

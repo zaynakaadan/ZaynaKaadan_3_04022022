@@ -4,6 +4,9 @@
 .menus{
 background-color: colors.$lightergrey; 
 padding: 4rem 2rem;
+& h2{
+padding-bottom: 1rem;
+}
 .menus_cards{
     display: grid;
     grid-template-columns: repeat(2,1fr);
