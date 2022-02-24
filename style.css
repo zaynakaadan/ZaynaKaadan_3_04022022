@@ -283,7 +283,7 @@ footer h2 {
   font-family: "Shrikhand", cursive;
   color: white;
   font-weight: 100;
-  font-size: medium;
+  padding-bottom: 0.5rem;
 }
 footer p {
   color: white;
