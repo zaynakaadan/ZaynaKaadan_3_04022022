@@ -163,7 +163,7 @@ h1 {
   padding: 4rem 2rem;
 }
 .menus h2 {
-  padding-bottom: 1rem;
+  margin: 2rem 0;
 }
 .menus .menus_cards {
   display: grid;

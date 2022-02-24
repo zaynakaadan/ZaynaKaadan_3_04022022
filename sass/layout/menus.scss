@@ -4,8 +4,8 @@
 .menus{
 background-color: colors.$lightergrey; 
 padding: 4rem 2rem;
-& h2{
-padding-bottom: 1rem;
+ & h2{
+    margin:2rem 0;
 }
 .menus_cards{
     display: grid;
