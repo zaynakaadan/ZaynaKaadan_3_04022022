@@ -447,8 +447,8 @@ footer i {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-#page-resto .resto-main .menus__category .menu-item .price {
-  padding: 1rem;
+#page-resto .resto-main .menus__category .menu-item .menu-item__price {
+  padding: 0.8rem;
   margin-left: auto;
   font-weight: 700;
   display: flex;

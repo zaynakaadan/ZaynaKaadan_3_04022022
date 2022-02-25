@@ -95,8 +95,8 @@ overflow: hidden;
   text-overflow: ellipsis;
 }
   }
-    .price{
-    padding: 1rem;
+    .menu-item__price{
+    padding: 0.8rem ;
     margin-left: auto;
     font-weight: 700;
     display: flex;
@@ -106,7 +106,7 @@ overflow: hidden;
     $button-width:4rem;
     border-radius:0 1rem 1rem 0 ;
     background-color:colors.$tertiary;
-    margin-right: -$button-width;
+    margin-right: -1*$button-width;
     width:$button-width;
     transition: margin-right 0.5s;
     display: grid;
