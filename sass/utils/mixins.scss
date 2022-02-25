@@ -51,6 +51,8 @@ position: relative;
     }
     &:hover::after{
     opacity: 1;
+    transform:  translateY(-50%) scale(1.1);
+    cursor: pointer;
     }
 }
 @mixin base-button {

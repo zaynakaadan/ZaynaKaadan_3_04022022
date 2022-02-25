@@ -259,6 +259,8 @@ h1 {
 }
 .menus .card__description:hover::after {
   opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+  cursor: pointer;
 }
 .menus .card__description h3,
 .menus .card__description p {
@@ -269,10 +271,6 @@ h1 {
 }
 .menus .card__description p {
   padding-bottom: 0.3rem;
-}
-.menus .card__description:hover .fas {
-  opacity: 1;
-  transform: translateY(-50%) scale(1.1);
 }
 
 footer {
@@ -361,6 +359,8 @@ footer i {
 }
 .resto__title:hover::after {
   opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+  cursor: pointer;
 }
 
 #page-resto header::before {
