@@ -376,6 +376,9 @@ footer i {
   left: 1rem;
   top: 2.5rem;
 }
+#page-resto header:hover::before {
+  transform: scale(1.2);
+}
 #page-resto .menus-grid {
   padding-top: 1rem;
   display: grid;

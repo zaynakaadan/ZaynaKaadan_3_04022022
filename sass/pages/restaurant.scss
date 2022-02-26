@@ -20,13 +20,17 @@ padding: 1rem 1rem;
 @include mixins.heart-animated;
 }
 #page-resto{
-header::before{
+  header{
+  &::before{
   @include mixins.font-awesome;
   position: absolute;
   left: 1rem;
   top:2.5rem;
-  
   }
+  &:hover::before{
+    transform: scale(1.2);
+      }
+}
 .menus-grid{
   padding-top:1rem ;
   display: grid;
