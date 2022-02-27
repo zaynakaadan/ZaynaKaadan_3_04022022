@@ -437,6 +437,12 @@ footer i {
 #page-resto .resto-main .menus__category .menu-item:nth-child(4) {
   animation-delay: 400ms;
 }
+#page-resto .resto-main .menus__category .menu-item:nth-child(5) {
+  animation-delay: 500ms;
+}
+#page-resto .resto-main .menus__category .menu-item:nth-child(6) {
+  animation-delay: 600ms;
+}
 #page-resto .resto-main .menus__category .menu-item:hover {
   cursor: pointer;
 }

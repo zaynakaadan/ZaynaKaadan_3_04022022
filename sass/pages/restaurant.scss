@@ -71,7 +71,7 @@ padding: 1rem 1rem;
   }
 
 .menu-item{
-  @for $i from 2 through 4 {
+  @for $i from 2 through 6 {
     &:nth-child(#{$i}) {
       animation-delay: 100ms * $i;
     }
