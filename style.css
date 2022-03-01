@@ -118,6 +118,9 @@ h1 {
 @media (max-width: 1000px) {
   .fonction ol {
     flex-direction: column;
+    padding: 0;
+    white-space: nowrap;
+    margin-right: -1rem;
   }
 }
 .fonction li {
@@ -173,6 +176,7 @@ h1 {
 @media (max-width: 1000px) {
   .menus .menus_cards {
     grid-template-columns: repeat(1, 1fr);
+    margin: -1rem;
   }
 }
 .menus .menus_cards .new {
@@ -317,6 +321,12 @@ footer i {
 .resto__title h2 {
   font-family: "shrikhand", "cursive";
   padding: 1rem 1rem;
+}
+@media (max-width: 1000px) {
+  .resto__title h2 {
+    padding: 0.8rem 0.3rem;
+    white-space: nowrap;
+  }
 }
 .resto__title::before {
   display: inline-block;

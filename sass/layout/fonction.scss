@@ -12,7 +12,11 @@
         padding-bottom: 2rem;
         @media (max-width:variables.$breakpoint){
         flex-direction: column;
+        padding: 0 ;
+        white-space: nowrap;
+        margin-right: -1rem;
         }
+        
     }
 & li{ 
     position: relative;

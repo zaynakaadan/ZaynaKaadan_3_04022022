@@ -16,6 +16,12 @@
 h2{
 font-family: "shrikhand","cursive";
 padding: 1rem 1rem;
+@media (max-width:variables.$breakpoint){
+  padding: 0.8rem  0.3rem ;
+  white-space: nowrap;
+  
+  
+  }
 } 
 @include mixins.heart-animated;
 }
